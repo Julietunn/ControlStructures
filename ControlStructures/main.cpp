@@ -1,11 +1,11 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
 //#define TEMPERATURE
 //#define TARGET
 //#define CALC_1
-//define - определить
-//definition - определение 
+//define - РѕРїСЂРµРґРµР»РёС‚СЊ
+//definition - РѕРїСЂРµРґРµР»РµРЅРёРµ 
 
 
 void main()
@@ -13,39 +13,39 @@ void main()
 	setlocale(LC_ALL, "Rus");
 #if defined TEMPERATURE
 	int temperature;
-	cout << "Введите температуру воздуха:"; cin >> temperature;
+	cout << "Р’РІРµРґРёС‚Рµ С‚РµРјРїРµСЂР°С‚СѓСЂСѓ РІРѕР·РґСѓС…Р°:"; cin >> temperature;
 
 	if (temperature > 0)
 	{
-		cout << "На улице тепло" << endl;
+		cout << "РќР° СѓР»РёС†Рµ С‚РµРїР»Рѕ" << endl;
 	}
 
 	else
 	{
-		cout << "На улице холодно" << endl;
+		cout << "РќР° СѓР»РёС†Рµ С…РѕР»РѕРґРЅРѕ" << endl;
 	}
 #endif // TEMPERATURE 
 
 #ifdef TAGRET
 	int n;
-	cout << "Введите число:"; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ:"; cin >> n;
 	if (n > 0 && n < 10)
 	{
-		cout << "Введите число:"; cin >> n;
+		cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ:"; cin >> n;
 
 	}
 	else 
 	{
-		cout << "Вы промахнулись" << endl;
+		cout << "Р’С‹ РїСЂРѕРјР°С…РЅСѓР»РёСЃСЊ" << endl;
 
 	}
 #endif //TARGET
 
 #if defined CALC_1
-	//если определено CALC_1, то нижеследующий код до директивы #endif будет виден компилятору
-	double a, b; //числа, вводимые с клавиатуры
-	char s; //sign - знак операции
-	cout << "Введите простое арифметическое выражение:";
+	//РµСЃР»Рё РѕРїСЂРµРґРµР»РµРЅРѕ CALC_1, С‚Рѕ РЅРёР¶РµСЃР»РµРґСѓСЋС‰РёР№ РєРѕРґ РґРѕ РґРёСЂРµРєС‚РёРІС‹ #endif Р±СѓРґРµС‚ РІРёРґРµРЅ РєРѕРјРїРёР»СЏС‚РѕСЂСѓ
+	double a, b; //С‡РёСЃР»Р°, РІРІРѕРґРёРјС‹Рµ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
+	char s; //sign - Р·РЅР°Рє РѕРїРµСЂР°С†РёРё
+	cout << "Р’РІРµРґРёС‚Рµ РїСЂРѕСЃС‚РѕРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ РІС‹СЂР°Р¶РµРЅРёРµ:";
 	cin >> a >> s >> b;
 	//cout << a << s << b << endl;
 
@@ -73,5 +73,5 @@ void main()
 	{
 		cout << "Error:No operation!" << endl;
 	}
-#endif //конец блока 
+#endif //РєРѕРЅРµС† Р±Р»РѕРєР° 
 }
